@@ -37,16 +37,7 @@ echo -e "                                                                       
 echo -e "$orange                             By:AdrMXR                               "
  
 # Check if there is an internet connection
-ping -c 1 google.com > /dev/null 2>&1
-if [[ "$?" == 0 ]]; then
-echo ""
-echo -e "$green[✔][Internet Connection]............[ OK ]"
-sleep 1.5
-else
-echo ""
-echo -e "$red[!][Internet Connection].........[ NOT FOUND ]"
-echo ""
-exit
+
 fi
 
 # Check dependencies
